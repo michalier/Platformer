@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9a1071ef-5dcb-40ed-9907-5f25d1671821}</ProjectGuid>
+    <RootNamespace>Platformer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(SolutionDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(SolutionDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(SolutionDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(SolutionDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projekty\TGUI-0.9\include;C:\Projekty\SFML-2.5.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projekty\TGUI-0.9\lib;C:\Projekty\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;tgui-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projekty\TGUI-0.9\include;C:\Projekty\SFML-2.5.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projekty\TGUI-0.9\lib;C:\Projekty\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;tgui-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projekty\TGUI-0.9\include;C:\Projekty\SFML-2.5.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projekty\TGUI-0.9\lib;C:\Projekty\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;tgui-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projekty\TGUI-0.9\include;C:\Projekty\SFML-2.5.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projekty\TGUI-0.9\lib;C:\Projekty\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;tgui-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\EventFunctions\gameLevelEvent.cpp" />
+    <ClCompile Include="Game\EventFunctions\minigameEvent.cpp" />
+    <ClCompile Include="Game\setGameState.cpp" />
+    <ClCompile Include="Minigame\loadMinigame.cpp" />
+    <ClCompile Include="Minigame\loadMinigameUI.cpp" />
+    <ClCompile Include="Minigame\Minigame.cpp" />
+    <ClCompile Include="Minigame\minigameMovingSystem.cpp" />
+    <ClCompile Include="Minigame\Parts\BasePart.cpp" />
+    <ClCompile Include="Minigame\Parts\BasePartIO.cpp" />
+    <ClCompile Include="Minigame\Parts\EndPart.cpp" />
+    <ClCompile Include="Minigame\Parts\Plug.cpp" />
+    <ClCompile Include="Minigame\Parts\PlugHolder.cpp" />
+    <ClCompile Include="Minigame\Parts\StartPart.cpp" />
+    <ClCompile Include="Minigame\redrawMinigame.cpp" />
+    <ClCompile Include="Minigame\updateMinigame.cpp" />
+    <ClCompile Include="Player\checkCollisions.cpp" />
+    <ClCompile Include="Entity\Component\CollisionComponent\CollisionComponent.cpp" />
+    <ClCompile Include="Entity\Component\DisplayComponent\DisplayCircle\DisplayCircle.cpp" />
+    <ClCompile Include="Entity\Component\DisplayComponent\DisplayRect\DisplayRect.cpp" />
+    <ClCompile Include="Game\doGameEvent.cpp" />
+    <ClCompile Include="Entity\drawEntity.cpp" />
+    <ClCompile Include="Entity\Component\DisplayComponent\DrawFromPointsComponent\DrawFromPointsComponent.cpp" />
+    <ClCompile Include="Game\drawGame.cpp" />
+    <ClCompile Include="Level\drawLevel.cpp" />
+    <ClCompile Include="Player\drawPlayer.cpp" />
+    <ClCompile Include="Entity\Entity.cpp" />
+    <ClCompile Include="Player\findHook.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Level\getHooks.cpp" />
+    <ClCompile Include="Game\handleEvent.cpp" />
+    <ClCompile Include="Game\handleInput.cpp" />
+    <ClCompile Include="Entity\Component\InteractComponent\InteractComponent.cpp" />
+    <ClCompile Include="Level\Level.cpp" />
+    <ClCompile Include="Math\Line.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Player\movePlayer.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+    <ClCompile Include="Player\playerState.cpp" />
+    <ClCompile Include="Game\runGame.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Entity\summonEntity.cpp" />
+    <ClCompile Include="Entity\updateEntity.cpp" />
+    <ClCompile Include="Player\updatePlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entity\Component\AnimationComponent\AnimationComponent.hpp" />
+    <ClInclude Include="Entity\Component\CollisionComponent\CollisionComponent.hpp" />
+    <ClInclude Include="Entity\Component\DisplayComponent\DisplayCircle\DisplayCircle.hpp" />
+    <ClInclude Include="Entity\Component\DisplayComponent\DisplayComponent.hpp" />
+    <ClInclude Include="Entity\Component\DisplayComponent\DisplayRect\DisplayRect.hpp" />
+    <ClInclude Include="Entity\Component\DisplayComponent\DrawFromPointsComponent\DrawFromPointsComponent.hpp" />
+    <ClInclude Include="Entity\Entity.hpp" />
+    <ClInclude Include="Game\Game.hpp" />
+    <ClInclude Include="Entity\Component\InteractComponent\InteractComponent.hpp" />
+    <ClInclude Include="Game\TexturePack\TexturePack.hpp" />
+    <ClInclude Include="Level\Level.hpp" />
+    <ClInclude Include="Math\Line.hpp" />
+    <ClInclude Include="Math\Math.hpp" />
+    <ClInclude Include="Entity\Component\PhysicsComponent\PhysicsComponent.hpp" />
+    <ClInclude Include="Minigame\Minigame.hpp" />
+    <ClInclude Include="Minigame\Parts\BasePart.hpp" />
+    <ClInclude Include="Minigame\Parts\EndPart.hpp" />
+    <ClInclude Include="Minigame\Parts\Plug.hpp" />
+    <ClInclude Include="Minigame\Parts\PlugHolder.hpp" />
+    <ClInclude Include="Minigame\Parts\StartPart.hpp" />
+    <ClInclude Include="Player\Player.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

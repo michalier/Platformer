@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{a9620002-6bcb-4b53-9f16-181a5dea7653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{2a48e420-633f-4793-819e-7950115b142e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{b1725bff-34a8-4d63-8da8-c6de738470fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{887d714d-e3ef-422b-b4bb-fb2a0f3fc3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{d1660863-8ac4-40b5-b7c3-fc34213fe150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Level">
+      <UniqueIdentifier>{bd82ece4-d027-4523-8f0c-f2d821c1fd23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{d38bdaef-fa02-4257-ac97-fa873020f494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Components">
+      <UniqueIdentifier>{ca979ccd-740a-4452-9026-c9a8b9aa14c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Components\DisplayComponent">
+      <UniqueIdentifier>{9e573706-c76e-4b95-920b-ad1ee43434bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Components\CollisionComponent">
+      <UniqueIdentifier>{3b5aca67-8d5d-45d7-a269-f67cf31376dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Components\PhysicsComponent">
+      <UniqueIdentifier>{0696e600-9aa2-4956-bef0-df52a9ff562f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Components">
+      <UniqueIdentifier>{e68dd5b4-408b-4617-8bb1-466753b508aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Components\DisplayComponent">
+      <UniqueIdentifier>{47fa0eaa-8c3f-4773-98e5-df6a32363b5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Components\CollisionComponent">
+      <UniqueIdentifier>{44f131e8-45dc-471f-b8e8-ff7c525d0774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{f975d00f-5e98-429c-9796-a4788dd8198d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Player">
+      <UniqueIdentifier>{36afbad5-161d-4786-a3bb-772450278c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Components\CollisionComponent\RectCollider">
+      <UniqueIdentifier>{c994c4c8-7373-471a-97ad-d957f0d61114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Components\InteractComponent">
+      <UniqueIdentifier>{14dc97fe-c363-4022-9cb5-aec6378a1f16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\runGame.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\handleEvent.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\handleInput.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\drawLevel.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\drawEntity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Entity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Component\DisplayComponent\DrawFromPointsComponent\DrawFromPointsComponent.cpp">
+      <Filter>Source Files\Entity\Components\DisplayComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Line.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\summonEntity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Level.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\updatePlayer.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Component\CollisionComponent\CollisionComponent.cpp">
+      <Filter>Source Files\Entity\Components\CollisionComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\drawGame.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\checkCollisions.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Component\DisplayComponent\DisplayCircle\DisplayCircle.cpp">
+      <Filter>Source Files\Entity\Components\DisplayComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\movePlayer.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\drawPlayer.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\getHooks.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\findHook.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\playerState.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Component\InteractComponent\InteractComponent.cpp">
+      <Filter>Source Files\Entity\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Component\DisplayComponent\DisplayRect\DisplayRect.cpp">
+      <Filter>Source Files\Entity\Components\DisplayComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\updateEntity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\doGameEvent.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Minigame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\redrawMinigame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\loadMinigame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\minigameMovingSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\setGameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EventFunctions\minigameEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EventFunctions\gameLevelEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Parts\BasePart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Parts\PlugHolder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Parts\Plug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Parts\StartPart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\loadMinigameUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\updateMinigame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Parts\EndPart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minigame\Parts\BasePartIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Level.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.hpp">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.hpp">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\DisplayComponent\DisplayComponent.hpp">
+      <Filter>Header Files\Entity\Components\DisplayComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\CollisionComponent\CollisionComponent.hpp">
+      <Filter>Header Files\Entity\Components\CollisionComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\DisplayComponent\DrawFromPointsComponent\DrawFromPointsComponent.hpp">
+      <Filter>Header Files\Entity\Components\DisplayComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\PhysicsComponent\PhysicsComponent.hpp">
+      <Filter>Header Files\Entity\Components\PhysicsComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Line.hpp">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Player.hpp">
+      <Filter>Header Files\Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\DisplayComponent\DisplayCircle\DisplayCircle.hpp">
+      <Filter>Header Files\Entity\Components\DisplayComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\InteractComponent\InteractComponent.hpp">
+      <Filter>Header Files\Entity\Components\InteractComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\DisplayComponent\DisplayRect\DisplayRect.hpp">
+      <Filter>Header Files\Entity\Components\DisplayComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Component\AnimationComponent\AnimationComponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minigame\Minigame.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TexturePack\TexturePack.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minigame\Parts\BasePart.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minigame\Parts\PlugHolder.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minigame\Parts\Plug.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minigame\Parts\StartPart.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minigame\Parts\EndPart.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
