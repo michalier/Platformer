@@ -23,7 +23,7 @@ namespace plt
 	{
 	protected:
 		sf::View playerView;
-		Level* level;
+		
 
 		float hookLenght, hookSpeed;
 		sf::CircleShape hookRange;
@@ -33,14 +33,15 @@ namespace plt
 		int state;
 		
 	public:
+		Level* level;
 		bool jumped, displayRange;
 		
 		Entity* hookSelected;
 
 		PhysicsComponent* physicsComponent;
 
-		Player(sf::Vector2f position, Level* level);
-		static Player* summon(sf::Vector2f position, Level* level);
+		Player(sf::Vector2f position);
+		static Player* summon(sf::Vector2f position);
 
 		void setState(int s);
 		int getState() const;

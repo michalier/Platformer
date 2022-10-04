@@ -11,6 +11,15 @@ void plt::Game::run()
 			this->handleEvent(event);
 		}
 
+		if (state == GameState::LoadingLevel && level != nullptr)
+		{
+			auto b = gui.get<tgui::ProgressBar>("bar");
+			b->setValue(level->progress);
+
+			if (level->progress == 100)
+				this->setState(GameState::GameLevel);
+		}
+
 		if (state == GameState::GameLevel)
 		{
 			this->handleInput();
@@ -23,7 +32,7 @@ void plt::Game::run()
 			{
 				player->updatePlayer();
 
-				level.update(player->position);
+				level->update(player->position);
 			}
 
 			this->debugText.setString(

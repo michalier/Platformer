@@ -26,7 +26,7 @@ void plt::Game::gameLevelEvent(sf::Event event)
 
 		case sf::Keyboard::E:
 		{
-			for (Entity* e : level.elems)
+			for (Entity* e : level->elems)
 			{
 				if (e->interactComponent != nullptr)
 					this->doEvent(e->interactComponent->check());

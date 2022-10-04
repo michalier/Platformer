@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="Game\EventFunctions\gameLevelEvent.cpp" />
     <ClCompile Include="Game\EventFunctions\minigameEvent.cpp" />
+    <ClCompile Include="Game\loadLevel.cpp" />
     <ClCompile Include="Game\setGameState.cpp" />
     <ClCompile Include="Minigame\loadMinigame.cpp" />
     <ClCompile Include="Minigame\loadMinigameUI.cpp" />

@@ -2,7 +2,7 @@
 #include "../Entity/Component/DisplayComponent/DrawFromPointsComponent/DrawFromPointsComponent.hpp"
 #include "../Entity/Component/PhysicsComponent/PhysicsComponent.hpp"
 
-plt::Player::Player(sf::Vector2f position, Level* level) : plt::Entity(position)
+plt::Player::Player(sf::Vector2f position) : plt::Entity(position)
 {
 	this->setState(PlayerState::Falling);
 
@@ -46,7 +46,7 @@ sf::View& plt::Player::getView()
 	return playerView;
 }
 
-plt::Player* plt::Player::summon(sf::Vector2f position, Level* level)
+plt::Player* plt::Player::summon(sf::Vector2f position)
 {
-	return new Player(position, level);
+	return new Player(position);
 }

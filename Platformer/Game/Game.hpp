@@ -14,13 +14,14 @@ namespace plt
 	{
 		MainMenu,
 		Settings,
+		LoadingLevel,
 		GameLevel
 	};
 
 	class Game
 	{
 	protected:
-		Level level;
+		Level* level;
 		Player* player;
 
 		GameState state;
@@ -47,6 +48,8 @@ namespace plt
 
 		void minigameEvent(sf::Event event);
 		void gameLevelEvent(sf::Event event);
+
+		void loadLevel(int nr);
 
 		void handleInput();
 		void drawGame();

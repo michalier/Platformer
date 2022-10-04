@@ -8,7 +8,7 @@ void plt::Game::drawGame()
 	{
 		window.setView(player->getView());
 
-		window.draw(level);
+		window.draw(*level);
 		window.draw(*player);
 
 		window.setView(window.getDefaultView());

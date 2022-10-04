@@ -15,10 +15,10 @@ namespace plt
 		sf::FloatRect space;
 
 		std::vector<Entity*> elems;
-		
-		//Level();
+		unsigned progress;
+		Level();
 
-		void load(sf::Font& font);
+		void load(sf::Font* font, std::string name);
 		void update(sf::Vector2f pos);
 		std::vector<Entity*>* getHooks(sf::Vector2f pos, float range);
 

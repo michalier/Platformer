@@ -12,8 +12,11 @@ void plt::Player::findHook()
 	if (hookSelected == nullptr)
 	{
 		auto hooks = level->getHooks(position, hookLenght);
+
 		if (hooks->size() > 0)
 			hookSelected = hooks->at(0);
+
+		delete hooks;
 	}
 
 	if (hookSelected != nullptr)
@@ -24,20 +27,22 @@ void plt::Player::selectHook(int o)
 {
 	if (hookSelected != nullptr)
 	{
-		auto v = level->getHooks(position, hookLenght);
+		auto hooks = level->getHooks(position, hookLenght);
 		int a = 0;
-		for (int i = 0; i < v->size(); i++)
+		for (int i = 0; i < hooks->size(); i++)
 		{
-			if (v->at(i) == hookSelected)
+			if (hooks->at(i) == hookSelected)
 				a = i;
 		}
 
 		hookSelected->displayComponent->setColor(sf::Color::Black);
 
 		a += o;
-		a = (a + v->size()) % v->size();
-		hookSelected = v->at(a);
+		a = (a + hooks->size()) % hooks->size();
+		hookSelected = hooks->at(a);
 
 		hookSelected->displayComponent->setColor(sf::Color::Cyan);
+
+		delete hooks;
 	}
 }
